@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- The form tag is used for forms for user input -->
+  <form name="loginForm">
+    <h1>Logga in</h1>
+    <!-- 
+     required = the field can not be empty, when the form is sent 
+     type="email" = perform basic validation that the user enters an email
+     type="password" = hide the characters typed by the user (replace with bullets)
+     placeholder = text to show in the field before the user starts typing
+     give the fields unique names - needed in order to read the input with JavaScript
+     -->
+    <input type="email" name="email" placeholder="E-post" required>
+    <input type="password" name="password" placeholder="Ditt lösenord" required>
+    <!-- A button to click in order to "send" the form -->
+    <input type="submit" value="Logga in">
+  </form>
+  <script type="module" src="display-menu.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
