@@ -31,6 +31,8 @@ form.addEventListener('submit', async event => {
   // Logging the response from the REST-api to the console
   console.log(response);
 
-  // If we were to continue building a frontend application
-  // we would show a message "Success you have created the pet" etc...
+  // Goto the pet list page
+  location.href = "pet-list.html";
+
+
 });
